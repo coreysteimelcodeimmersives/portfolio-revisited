@@ -4,8 +4,30 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: right;  */ 
+    background-position: right; */
 } 
+
+.parent{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.road-img-container{
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: calc(100vh - 35px);
+    margin: 10px;
+}
+
+#road-img{
+    border-radius: 50px;
+}
 
 .container{
     border: 5px solid white;
@@ -13,9 +35,9 @@ body {
     flex-direction: column;
     padding: 25px;
     border-radius: 25px;
-    margin: 20px;
+    margin: 10px;
     width: fit-content;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 95px);
 }
 
 .title-name{
@@ -23,29 +45,28 @@ body {
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .sub-text{
     padding-right: 10px;
     padding-left: 10px;
-    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.profile-img{
-    padding: 10px;
+#profile-img{
+    height: calc(100vh - 250px);
 }
 
 .buttons{
     display: flex;
     flex-direction: row;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.about-me{
-    padding-right: 8px;
-}
-
-.portfolio{
-    padding-right: 8px;
+    gap: 25px;
+    justify-content: center;
+    margin: 20px;
 }
